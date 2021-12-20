@@ -6,7 +6,7 @@ While learning the JS language, an application was created that allows you to ge
 
 ## Demo project
 
-Demo: https://dmitriystepanov601.github.io/FoodRecipe/
+Demo: https://dmitriystepanov601.github.io/Movie/
 
 ## Technologies
 
