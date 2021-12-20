@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/film.ico">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Movie App</title>
+</head>
+
+<body>
+    <header>
+        <form id="form">
+            <input type="text" placeholder="Search" id="search" class="search">
+        </form>
+    </header>
+
+    <div id="tags"></div>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <!-- Button to close the overlay navigation -->
+        <div class="overlay-content" id="overlay-content"></div>
+        <!-- Overlay content -->
+        <a href="javascript:void(0)" class="arrow left-arrow" id="left-arrow">&#8656;</a>
+        <a href="javascript:void(0)" class="arrow right-arrow" id="right-arrow">&#8658;</a>
+    </div>
+
+    <main id="main"></main>
+    <div class="pagination">
+        <div class="page" id="prev">Previous Page</div>
+        <div class="current" id="current">1</div>
+        <div class="page" id="next">Next Page</div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
