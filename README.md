@@ -19,7 +19,7 @@ Demo: https://dmitriystepanov601.github.io/Movie/
 
 In this application, the user has the opportunity to enter the name of the movie in the search. As a result of the search, the user will receive a list of popular new films with a rating.
 
-1111
+![animation](https://user-images.githubusercontent.com/61186198/147103530-8c0221fd-8054-4e5c-b087-d64c6854cb76.gif)
 
 ## API
 
