@@ -2,7 +2,8 @@
 
 While learning the JS language, an application was created that allows you to get information about movies.
 
-1111
+![2021-12-22_16-10-07](https://user-images.githubusercontent.com/61186198/147097902-a61f531a-621b-4516-b186-4694c807cad8.png)
+
 
 ## Demo project
 
