@@ -4,8 +4,8 @@
 }
 
 :root {
-    --primary-color: #22254b;
-    --secondary-color: #373b69;
+    --primary-color: #6C006C;
+    --secondary-color: #A600A6;
 }
 
 body {
@@ -37,7 +37,7 @@ header {
 }
 
 .search::placeholder {
-    color: #7378c5;
+    color: #fff;
 }
 
 main {
