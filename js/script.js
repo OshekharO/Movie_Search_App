@@ -136,6 +136,7 @@ function highlightSelection() {
         tag.classList.remove('highlight')
     })
     clearBtn()
+
     if (selectedGenre.length != 0) {
         selectedGenre.forEach(id => {
             const hightlightedTag = document.getElementById(id);
@@ -150,11 +151,11 @@ function clearBtn() {
     if (clearBtn) {
         clearBtn.classList.add('highlight')
     } else {
-
         let clear = document.createElement('div');
         clear.classList.add('tag', 'highlight');
         clear.id = 'clear';
         clear.innerText = 'Clear x';
+
         clear.addEventListener('click', () => {
             selectedGenre = [];
             setGenre();
@@ -191,11 +192,9 @@ function getMovies(url) {
             }
 
             tagsEl.scrollIntoView({ behavior: 'smooth' })
-
         } else {
             main.innerHTML = `<h1 class="no-results">No Results Found</h1>`
         }
-
     })
 }
 
@@ -207,7 +206,7 @@ function showMovies(data) {
         const movieEl = document.createElement('div');
         movieEl.classList.add('movie');
         movieEl.innerHTML = `
-             <img src="${poster_path? IMG_URL+poster_path: "http://via.placeholder.com/1080x1580" }" alt="${title}">
+            <img src="${poster_path? IMG_URL+poster_path: "http://via.placeholder.com/1080x1580" }" alt="${title}">
 
             <div class="movie-info">
                 <h3>${title}</h3>
@@ -215,7 +214,6 @@ function showMovies(data) {
             </div>
 
             <div class="overview">
-
                 <h3>Overview</h3>
                 ${overview}
                 <br/> 
@@ -233,42 +231,34 @@ function showMovies(data) {
 }
 
 const overlayContent = document.getElementById('overlay-content');
+
 /* Open when someone clicks on the span element */
+
 function openNav(movie) {
     let id = movie.id;
     fetch(BASE_URL + '/movie/' + id + '/videos?' + API_KEY).then(res => res.json()).then(videoData => {
         console.log(videoData);
         if (videoData) {
             document.getElementById("myNav").style.width = "100%";
+
             if (videoData.results.length > 0) {
                 var embed = [];
                 var dots = [];
                 videoData.results.forEach((video, idx) => {
                     let { name, key, site } = video
-
                     if (site == 'YouTube') {
-
                         embed.push(`
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/${key}" title="${name}" class="embed hide" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          
-          `)
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/${key}" title="${name}" 
+                            class="embed hide" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                            gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        `)
 
-                        dots.push(`
-              <span class="dot">${idx + 1}</span>
-            `)
+                        dots.push(`<span class="dot">${idx + 1}</span>`)
                     }
                 })
 
-                var content = `
-        <h1 class="no-results">${movie.original_title}</h1>
-        <br/>
-        
-        ${embed.join('')}
-        <br/>
-
-        <div class="dots">${dots.join('')}</div>
-        
-        `
+                var content = `<h1 class="no-results">${movie.original_title}</h1><br/>
+                ${embed.join('')}<br/><div class="dots">${dots.join('')}</div>`
                 overlayContent.innerHTML = content;
                 activeSlide = 0;
                 showVideos();
@@ -280,6 +270,7 @@ function openNav(movie) {
 }
 
 /* Close when someone clicks on the "x" symbol inside the overlay */
+
 function closeNav() {
     document.getElementById("myNav").style.width = "0%";
 }
@@ -296,7 +287,6 @@ function showVideos() {
         if (activeSlide == idx) {
             embedTag.classList.add('show')
             embedTag.classList.remove('hide')
-
         } else {
             embedTag.classList.add('hide');
             embedTag.classList.remove('show')
@@ -321,7 +311,6 @@ leftArrow.addEventListener('click', () => {
     } else {
         activeSlide = totalVideos - 1;
     }
-
     showVideos()
 })
 
@@ -333,7 +322,6 @@ rightArrow.addEventListener('click', () => {
     }
     showVideos()
 })
-
 
 function getColor(vote) {
     if (vote >= 8) {
@@ -347,7 +335,6 @@ function getColor(vote) {
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
-
     const searchTerm = search.value;
     selectedGenre = [];
     setGenre();
