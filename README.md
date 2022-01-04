@@ -24,6 +24,4 @@ In this application, the user has the opportunity to enter the name of the movie
 
 ## API
 
-The data from the movies was taken using the TMDB API (Movie API).
-
-![2021-12-20_19-00-24](https://user-images.githubusercontent.com/61186198/146803432-b1e8e3d2-6486-4235-99e9-20a2acd55712.png)
+The data from the movies was taken using the TMDB API: https://www.themoviedb.org/documentation/api
