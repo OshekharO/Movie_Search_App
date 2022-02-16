@@ -208,7 +208,7 @@ function openNav(movie) {
                     let { name, key, site } = video
                     if (site == 'YouTube') {
                         embed.push(`
-                            <iframe width="100%" height="100%" src="https://www.2embed.ru/embed/tmdb/movie?id=${id}" title="${name}" 
+                            <iframe width="100%" height="110%" src="https://www.2embed.ru/embed/tmdb/movie?id=${id}" title="${name}" 
                             class="embed hide" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
                             gyroscope; picture-in-picture" allowfullscreen></iframe>
                         `)
