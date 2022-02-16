@@ -168,17 +168,11 @@ main {
     color: #fff;
     font-weight: bold;
     font-size: 16px;
-    padding: 10px 20px;
-    margin: 5px;
-    margin-top: 25px;
     border-radius: 15px;
     outline: none;
     width: 130px;
     text-transform: uppercase;
     cursor: pointer;
-    text-align: center;
-    align-content: center;
-    align-items: center;
 }
 
 
