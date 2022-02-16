@@ -22,6 +22,14 @@ const genres = [{
         "name": "Comedy"
     },
     {
+        "id": 80,
+        "name": "Crime"
+    },
+    {
+        "id": 99,
+        "name": "Documentary"
+    },
+    {
         "id": 18,
         "name": "Drama"
     },
@@ -34,12 +42,44 @@ const genres = [{
         "name": "Fantasy"
     },
     {
+        "id": 36,
+        "name": "History"
+    },
+    {
+        "id": 27,
+        "name": "Horror"
+    },
+    {
         "id": 10402,
         "name": "Music"
     },
     {
+        "id": 9648,
+        "name": "Mystery"
+    },
+    {
         "id": 10749,
         "name": "Romance"
+    },
+    {
+        "id": 878,
+        "name": "Science Fiction"
+    },
+    {
+        "id": 10770,
+        "name": "TV Movie"
+    },
+    {
+        "id": 53,
+        "name": "Thriller"
+    },
+    {
+        "id": 10752,
+        "name": "War"
+    },
+    {
+        "id": 37,
+        "name": "Western"
     }
 ]
 
@@ -177,7 +217,7 @@ function showMovies(data) {
                 <h3>Overview</h3>
                 ${overview}
                 <br/> 
-                <button class="know-more" id="${id}">WATCH NOW</button
+                <button class="know-more" id="${id}">Know More</button
             </div>
         
         `
@@ -208,11 +248,12 @@ function openNav(movie) {
                     let { name, key, site } = video
                     if (site == 'YouTube') {
                         embed.push(`
-                            <iframe width="100%" height="150%" src="https://www.2embed.ru/embed/tmdb/movie?id=${id}" title="${name}" 
+                            <iframe width="100%" height="100%" src="https://www.2embed.ru/embed/tmdb/movie?id=${id}" title="${name}" 
                             class="embed hide" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
                             gyroscope; picture-in-picture" allowfullscreen></iframe>
                         `)
-                    dots.push(`<span class="dot">${idx + 1}</span>`)
+
+                        dots.push(`<span class="dot">${idx + 1}</span>`)
                     }
                 })
 
@@ -224,7 +265,7 @@ function openNav(movie) {
             } else {
                 overlayContent.innerHTML = `<h1 class="no-results">No Results Found</h1>`
             }
-        
+        }
     })
 }
 
@@ -260,6 +301,27 @@ function showVideos() {
         }
     })
 }
+
+const leftArrow = document.getElementById('left-arrow')
+const rightArrow = document.getElementById('right-arrow')
+
+leftArrow.addEventListener('click', () => {
+    if (activeSlide > 0) {
+        activeSlide--;
+    } else {
+        activeSlide = totalVideos - 1;
+    }
+    showVideos()
+})
+
+rightArrow.addEventListener('click', () => {
+    if (activeSlide < (totalVideos - 1)) {
+        activeSlide++;
+    } else {
+        activeSlide = 0;
+    }
+    showVideos()
+})
 
 function getColor(vote) {
     if (vote >= 8) {
