@@ -162,14 +162,14 @@ main {
 }
 
 .know-more {
-background-color: #00bfb2;
-background-image: linear-gradient(315deg, #00bfb2 0%, #028090 74%);
+  background-color: #00bfb2;
+  background-image: linear-gradient(315deg, #00bfb2 0%, #028090 74%);
   border:none;
   color:#fff;
   font-size:15px;
-  padding: 10px 20px;
-  margin:5px;
-  margin-top: 25px;
+    padding: 10px 20px;
+    margin-top: 5px;
+    margin-left: 140px;
   border-radius:15px;
   outline:none;
   width: 130px;
