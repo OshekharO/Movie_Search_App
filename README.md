@@ -7,7 +7,7 @@ While learning the JS language, an application was created that allows you to ge
 
 ## Demo project
 
-Demo:https://oshekharo.github.io/Movie_Search_App
+https://oshekharo.github.io/Movie_Search_App
 
 ## Technologies
 
