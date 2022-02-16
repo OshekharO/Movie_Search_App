@@ -1,5 +1,5 @@
 //TMDB 
-const API_KEY = 'api_key=1cf50e6248dc270629e802686245c2c8';
+const API_KEY = 'api_key=c2facfc70a02549f7258e485c0fd73cc';
 const BASE_URL = 'https://api.themoviedb.org/3';
 const API_URL = BASE_URL + '/discover/movie?sort_by=popularity.desc&' + API_KEY;
 const IMG_URL = 'https://image.tmdb.org/t/p/w500';
@@ -22,14 +22,6 @@ const genres = [{
         "name": "Comedy"
     },
     {
-        "id": 80,
-        "name": "Crime"
-    },
-    {
-        "id": 99,
-        "name": "Documentary"
-    },
-    {
         "id": 18,
         "name": "Drama"
     },
@@ -42,44 +34,12 @@ const genres = [{
         "name": "Fantasy"
     },
     {
-        "id": 36,
-        "name": "History"
-    },
-    {
-        "id": 27,
-        "name": "Horror"
-    },
-    {
         "id": 10402,
         "name": "Music"
     },
     {
-        "id": 9648,
-        "name": "Mystery"
-    },
-    {
         "id": 10749,
         "name": "Romance"
-    },
-    {
-        "id": 878,
-        "name": "Science Fiction"
-    },
-    {
-        "id": 10770,
-        "name": "TV Movie"
-    },
-    {
-        "id": 53,
-        "name": "Thriller"
-    },
-    {
-        "id": 10752,
-        "name": "War"
-    },
-    {
-        "id": 37,
-        "name": "Western"
     }
 ]
 
