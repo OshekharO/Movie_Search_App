@@ -9,7 +9,7 @@
 }
 
 body {
-    background-color: var(--primary-color);
+    background-color: black;
     font-family: 'Poppins', sans-serif;
     margin: 0;
 }
