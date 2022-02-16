@@ -176,6 +176,9 @@ main {
     width: 130px;
     text-transform: uppercase;
     cursor: pointer;
+    text-align: center;
+    align-content: center;
+    align-items: center;
 }
 
 
