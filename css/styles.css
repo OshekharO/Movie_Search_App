@@ -167,10 +167,8 @@ main {
   border:none;
   color:#fff;
   font-size:15px;
-    padding: 10px 20px;
-    margin-top: 5px;
-    margin-left: 140px;
-    margin-right: 70px;
+  margin: 0;
+  position: absolute;
   border-radius:15px;
   outline:none;
   width: 130px;
