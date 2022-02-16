@@ -222,7 +222,7 @@ function openNav(movie) {
             } else {
                 overlayContent.innerHTML = `<h1 class="no-results">No Results Found</h1>`
             }
-        }
+        
     })
 }
 
