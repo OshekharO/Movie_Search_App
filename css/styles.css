@@ -284,9 +284,11 @@ main {
 
 .dots {
     margin-top: 30px;
+    visibility: hidden;
 }
 
 .dots .dot {
+    visibility: hidden;
     padding: 5px 15px;
     border-radius: 50%;
     border: 5px solid var(--secondary-color);
@@ -297,5 +299,6 @@ main {
 }
 
 .dots .dot.active {
+   visibility: hidden;
     border-color: orange;
 }
