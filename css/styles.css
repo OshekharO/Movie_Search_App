@@ -109,7 +109,6 @@ main {
 }
 
 #tags {
-    background-color: blue;
     width: 80%;
     display: flex;
     flex-wrap: wrap;
@@ -121,7 +120,7 @@ main {
 .tag {
     color: #480607;
     padding: 10px 20px;
-    background-color: orange;
+    background-color: blue;
     border-radius: 50px;
     margin: 5px;
     display: inline-block;
