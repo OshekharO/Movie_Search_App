@@ -22,7 +22,7 @@ header {
 }
 
 .search {
-    background-color: transparent;
+    background-color: #202020;
     border: 2px solid var(--primary-color);
     padding: 0.5rem 1rem;
     border-radius: 50px;
