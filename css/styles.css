@@ -266,17 +266,20 @@ main {
 }
 
 .arrow {
+    visibility: hidden;
     position: absolute;
     font-size: 40px;
 }
 
 .arrow.left-arrow {
+    visibility: hidden;
     top: 50%;
     left: 5%;
     transform: translateY(-50%);
 }
 
 .arrow.right-arrow {
+    visibility: hidden;
     top: 50%;
     transform: translateY(-50%);
     right: 5%;
