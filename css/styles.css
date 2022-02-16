@@ -173,6 +173,9 @@ main {
     width: 130px;
     text-transform: uppercase;
     cursor: pointer;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 
