@@ -212,7 +212,7 @@ function showMovies(data) {
                 <span class="${getColor(vote_average)}">${vote_average}</span>
             </div>
             <div class="overview">
-                <h3> <button class="know-more" id="${id}">Know More</button> </h3>
+                <h3 style="text-align:center;"> <button class="know-more" id="${id}">WATCH NOW</button> </h3>
        <br/>
          ${overview}
                  
