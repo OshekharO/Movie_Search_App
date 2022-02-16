@@ -215,7 +215,7 @@ function showMovies(data) {
 
             <div class="overview">
                 <h3 style="text-align:center;">WATCH</h3>
-                <button class="know-more" style="text-align:center;" id="${id}">WATCH NOW</button
+                <button class="know-more" id="${id}">WATCH NOW</button
             </div>
         
         `
