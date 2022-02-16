@@ -231,6 +231,13 @@ function openNav(movie) {
 
 /* Close when someone clicks on the "x" symbol inside the overlay */
 
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+
+var activeSlide = 0;
+var totalVideos = 0;
+
 function showVideos() {
     let embedClasses = document.querySelectorAll('.embed');
     let dots = document.querySelectorAll('.dot');
