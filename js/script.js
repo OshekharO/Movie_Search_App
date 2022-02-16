@@ -203,7 +203,6 @@ function openNav(movie) {
 
             if (videoData.results.length > 0) {
                 var embed = [];
-                var dots = [];
                 videoData.results.forEach((video, idx) => {
                     let { name, key, site } = video
                     if (site == 'YouTube') {
@@ -212,13 +211,11 @@ function openNav(movie) {
                             class="embed hide" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
                             gyroscope; picture-in-picture" allowfullscreen></iframe>
                         `)
-
-                        dots.push(`<span class="dot">${idx + 1}</span>`)
                     }
                 })
 
                 var content = `<h1 class="no-results">${movie.original_title}</h1><br/>
-                ${embed.join('')}<br/><div class="dots">${dots.join('')}</div>`
+                ${embed.join('')}`
                 overlayContent.innerHTML = content;
                 activeSlide = 0;
                 showVideos();
