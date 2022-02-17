@@ -21,6 +21,12 @@ header {
     background-color: orange;
 }
 
+.logo-img{
+    float: left;
+    position: relative;
+    margin: 10px 15px 15px 10px;
+}
+
 .search {
     background-color: black;
     border: 2px solid var(--primary-color);
