@@ -6,7 +6,7 @@ While learning the JS language, an application was created that allows you to ge
 
 ## Demo project
 
-https://oshekharo.github.io/Movie_Search_App
+https://www.uncoder.eu.org/movie/
 
 ## Technologies
 
