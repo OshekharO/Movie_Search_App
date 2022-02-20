@@ -24,4 +24,4 @@ Some UI Revamped have taken place in this fork and movie Scrapper Api have been 
 
 ## API
 
-The data from the movies was taken using the TMDB API: https://www.themoviedb.org/documentation/api
+The data from the movies was taken using the TMDB API
