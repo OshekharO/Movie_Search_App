@@ -133,6 +133,7 @@ main {
 
 .no-results {
     color: white;
+    border: solid;
 }
 
 .pagination {
