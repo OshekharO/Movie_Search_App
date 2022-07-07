@@ -203,6 +203,8 @@ main {
     /* 25% from the top */
     width: 100%;
     /* 100% width */
+    height: 60%;
+    /* 60% height */
     text-align: center;
     /* Centered text/links */
     margin-top: 30px;
